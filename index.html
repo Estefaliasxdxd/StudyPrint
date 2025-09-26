@@ -1,0 +1,138 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>StudySprint — Micro-sprints de estudio, insignias y mercado de habilidades</title>
+  <meta name="description" content="Salta a StudySprint: salas de estudio en sprints, micro-retos, insignias verificadas y un mercado para material y tutorías. Monetizable desde día 1." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#7c3aed;--muted:#98a0b3;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;background:linear-gradient(180deg,#081025 0%,#071623 100%);color:#e6eef8}
+    header{display:flex;align-items:center;justify-content:space-between;padding:20px 28px}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo .mark{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:700}
+    .cta{background:var(--accent);padding:10px 14px;border-radius:10px;color:white;text-decoration:none}
+    main{max-width:1100px;margin:20px auto;padding:28px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+    .card{background:var(--card);padding:20px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    h1{margin:0 0 8px;font-size:28px}
+    p.lead{color:var(--muted);margin:0 0 16px}
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}
+    .feature{background:var(--glass);padding:10px;border-radius:10px}
+    .side{position:relative}
+    .signup{display:flex;flex-direction:column;gap:8px}
+    input,select,button{padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+    button.primary{background:linear-gradient(90deg,var(--accent),#06b6d4);border:none;color:#021025;font-weight:700}
+    footer{max-width:1100px;margin:28px auto;color:var(--muted);font-size:13px;padding:0 28px}
+    .pricing{display:flex;gap:12px;margin-top:16px}
+    .plan{flex:1;padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
+    .market{margin-top:18px}
+    .badge{display:inline-block;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.03);font-size:12px;color:var(--muted)}
+    .shiny{display:inline-block;padding:6px 10px;border-radius:10px;background:linear-gradient(90deg,#ffe 0%,#fff0 40%);color:#021025;font-weight:700}
+    @media(max-width:900px){.hero{grid-template-columns:1fr;}.side{order:2}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="mark">SS</div>
+      <div>
+        <div style="font-weight:700">StudySprint</div>
+        <div style="font-size:12px;color:var(--muted)">Sprints cortos. Habilidades reales. Insignias verificadas.</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#features" style="margin-right:12px;color:var(--muted);text-decoration:none">Características</a>
+      <a href="#pricing" style="margin-right:12px;color:var(--muted);text-decoration:none">Precios</a>
+      <a class="cta" href="#signup">Unirme</a>
+    </nav>
+  </header>  <main>
+    <section class="hero">
+      <div>
+        <div class="card">
+          <h1>Salta a sprints de estudio que realmente importan</h1>
+          <p class="lead">Salas cronometradas de 25 minutos, micro-retos, proyectos prácticos y insignias verificadas que podes mostrar en tu CV o perfil profesional.</p>
+          <div class="features" id="features">
+            <div class="feature"><strong>Salas en vivo</strong><div style="font-size:13px;color:var(--muted)">Pomodoro grupal + moderador</div></div>
+            <div class="feature"><strong>Micro-retos</strong><div style="font-size:13px;color:var(--muted)">Práctica rápida con feedback</div></div>
+            <div class="feature"><strong>Insignias verificadas</strong><div style="font-size:13px;color:var(--muted)">Pequeñas pruebas y revisión humana</div></div>
+            <div class="feature"><strong>Mercado</strong><div style="font-size:13px;color:var(--muted)">Vende guías, plantillas y tutorías</div></div>
+          </div><div style="margin-top:16px">
+        <strong>Por qué es distinto</strong>
+        <p style="margin:8px 0;color:var(--muted)">No es solo otro espacio para procrastinar: está diseñado para que completes tareas prácticas, ganes micro-certificados y monetices tus habilidades.</p>
+      </div>
+    </div>
+
+    <div class="card market">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div>
+          <div class="badge">MVP</div>
+          <div style="font-weight:700;margin-top:8px">Mercado: Material + Tutorías</div>
+        </div>
+        <div class="shiny">Comisión 10%</div>
+      </div>
+      <p style="color:var(--muted);margin-top:10px">Cualquiera puede vender plantillas de estudio, guías cortas o sesiones de 30 minutos.</p>
+    </div>
+  </div>
+
+  <aside class="side">
+    <div class="card signup" id="signup">
+      <div style="font-weight:700">Empezá gratis</div>
+      <input placeholder="Correo o usuario" />
+      <select>
+        <option>Estudiante</option>
+        <option>Tutor</option>
+        <option>Profesor</option>
+      </select>
+      <button class="primary">Crear cuenta</button>
+      <div style="font-size:13px;color:var(--muted);margin-top:8px">También podés iniciar sesión con Google / Apple + verificar identidad para vender.</div>
+
+      <div class="pricing" id="pricing">
+        <div class="plan">
+          <div style="font-weight:700">Gratis</div>
+          <div style="font-size:13px;color:var(--muted)">Salas públicas, 1 insignia gratuita, vender 1 producto</div>
+        </div>
+        <div class="plan">
+          <div style="font-weight:700">Pro — $4/mes</div>
+          <div style="font-size:13px;color:var(--muted)">Salas privadas, 5 insignias/mes, 0% comisión en ventas</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <div style="font-weight:700">¿Querés monetizar?</div>
+      <ul style="color:var(--muted);margin:8px 0 0 18px;line-height:1.5">
+        <li>Vende plantillas y guías (10% comisión)</li>
+        <li>Da tutorías y cobra por sesión</li>
+        <li>Súmate al programa de referidos</li>
+      </ul>
+    </div>
+  </aside>
+</section>
+
+<section class="card" style="margin-top:18px">
+  <h3>Hoja de ruta técnica (MVP)</h3>
+  <ol style="color:var(--muted)">
+    <li>Landing + registro (verificación básica)</li>
+    <li>Salas en vivo (WebRTC básico) + temporizador</li>
+    <li>Micro-retos con auto-evaluación y revisión humana</li>
+    <li>Marketplace (subida de archivos y pasarela de pago)</li>
+    <li>Panel de creador y sistema de insignias</li>
+  </ol>
+</section>
+
+  </main>  <footer>
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div>© StudySprint — Propuesta única · Diseño & prototipo</div>
+      <div style="color:var(--muted)">Contacto: hello@studysprint.example</div>
+    </div>
+  </footer>  <script>
+    // Pequeño script demo: simulá creación de cuenta (sin backend)
+    document.querySelector('.primary').addEventListener('click', ()=>{
+      alert('Cuenta creada (demo). Revisa el prototipo en el editor.');
+    });
+  </script></body>
+</html>
